@@ -1,0 +1,28 @@
+* What is good scientific practice for research software?
+
+Software has become an essential component in basically every part of
+the research cycle. Still, there are no comprehensive guidelines how
+core principles of good scientific practice like transparency and
+reproducibility can and should be applied to research
+software. Further open questions are how to guarantee high quality of
+such software, how current and future researchers need to be trained
+and incentivized to generate sustainable software. To ensure the
+frictionless reuse and long term availability of software, dedicated
+framework conditions and infrastructure for research software need to
+be established. At the same time knowledge about open/libre software
+licenses needs to be disseminated. These and numerous other issues
+were so far only partially and inconsistently addressed by German
+universities and funding/research institutions.
+
+The Alliance of Science Organisations which consists of all large
+German research organisations (DFG, Fraunhofer Society, Helmholtz
+Association, Leibniz Association, Max Planck Society) and the
+universities has launched the ad-hoc working group "Research Software"
+as part of its initiative "Digital Information" to propose solutions
+for these issues. This working group aims to address the general
+questions regarding research software and to compile a set of
+guidelines and recommendations for the German and international
+research community.
+
+In this talk those questions and their potential solutions will be
+presented and discussed.
