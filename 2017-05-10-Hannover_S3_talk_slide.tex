@@ -31,7 +31,7 @@
   BoldFont={Fira Sans},
   BoldItalicFont={Fira Sans Italic}]{Fira Sans Light}
 
-\setbeamerfont{title}{size=\huge, series=\bfseries}
+\setbeamerfont{title}{size=\Large, series=\bfseries}
 \setbeamerfont{frametitle}{size=\large, series=\bfseries}
 \setbeamerfont{block body}{size=\Large}
 
@@ -87,11 +87,11 @@
 \title{What is good scientific practice\\for research software?}
 %------------------------------------------------------------------------------
 
-%\subtitle{Working Group Research Software}
+\subtitle{... and how can we make it part of our research culture?}
 
 \author{\small Konrad U. Förstner\\
   \vspace{0.5cm}
-  \textcolor{orange}{@konradfoerstner}}
+  \href{http://twitter.com/konradfoerstner}{@konradfoerstner}}
 
 \institute{University of Würzburg}
 
@@ -172,15 +172,14 @@
 \begin{frame}
 \end{frame}
 
-
 \setbeamertemplate{background}{}
 \setbeamertemplate{footline}{}
-
 \begin{frame}
   \frametitle{}
   \begin{block}{}
     \begin{center}
-      Research needs Software
+      It is unquestionable that there is a\\ strong and growing
+      dependency of\\research on software.
       \end{center}
   \end{block}
 \end{frame}
@@ -191,7 +190,7 @@
   \frametitle{}
   \begin{block}{}
     \begin{center}
-      Should be part of / equivalent to Material and Methodes of a publication
+      The importance of software for research is widely ignored.
       \end{center}
   \end{block}
 \end{frame}
@@ -209,10 +208,44 @@
 \setbeamertemplate{footline}{}
 \begin{frame}
   \frametitle{}
+  \begin{center}
+    \includegraphics[height=7cm]{images/fMRI_software_failure.png}
+  \end{center}
+\end{frame}
+
+\setbeamertemplate{background}{}
+\setbeamertemplate{footline}{}
+\begin{frame}
+  \frametitle{}
   \begin{block}{}
     \begin{center}
-      Still it is widely neglected by the majority of researchers,
-      journals, funders, politicians.
+      Common problems with research software\\      
+      \begin{itemize}
+      \item Source code not published/available
+      \item No quality control / automated tests
+      \item Missing documentation
+      \item Discontinued development (e.g. due to end of contract)
+      \item Long-time availability not guaranteed        
+      \item Missing citability
+      \end{itemize}      
+    \end{center}
+  \end{block}
+\end{frame}
+
+\setbeamertemplate{background}{}
+\setbeamertemplate{footline}{}
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Potential reasons\\
+      \begin{itemize}
+      \item Lack of awareness
+      \item Lack of skills
+      \item Lack of incentives
+      \item Lack of dedicated long-term funding
+      \item Hampering of competitors
+    \end{itemize}      
       \end{center}
   \end{block}
 \end{frame}
@@ -227,7 +260,7 @@
 \begin{frame}
   \begin{block}{}
     \begin{center}
-      Several iniatives has been launched
+      Several iniatives have been launched to address these issues
     \end{center}
   \end{block}
 \end{frame}
@@ -237,22 +270,24 @@
   \frametitle{}
   \begin{block}{}
     {\normalsize
-    \begin{itemize}
-    \item SSI (already 2008!)
-    \item Free Software Foundation Europe published a position paper
-      for the endorsement of Free Software and Open Standards in
-      Horizon 2020 and all publicly-funded research
-    \item DFG program "Research Software Sustainability"\\
-      (7M €, 130 applications)
-    \item Helmholtz Association Task Group "Access to and re-use of
-      research software" formed; organized a workshop about
-      research software
-    \item de-RSE founded (\href{http://de-rse.org}{de-rse.org})
+      \begin{itemize}
+      \item Software Carpentry (2004)\pause
+      \item Software Sustainability Institute (2008)\pause
+      \item Free Software Foundation Europe published a position paper
+        for the endorsement of Free Software and Open Standards in
+        Horizon 2020 and all publicly-funded research\pause
+      \item DFG program "Research Software Sustainability"\\
+        (7M €, 130 applications)\pause
+      \item Helmholtz Association Task Group "Access to and re-use of
+        research software" formed; organized a workshop about
+        research software\pause
+      \item de-RSE founded (\href{http://de-rse.org}{de-rse.org})\pause
+      \item Ad-hoc working group "Research Software" of the Alliance of
+        Science Organisations iGn ermany founded
     \end{itemize}
     }
   \end{block}
 \end{frame}
-
 
 \setbeamertemplate{background}{}
 \setbeamertemplate{footline}{}
@@ -275,7 +310,7 @@
   \frametitle{}
     \begin{block}{}
       \begin{center}
-        Priority areas
+        Priority areas of the iniative\\
         \begin{itemize}
         \item Research Data
         \item Virtual Research Environments
@@ -284,12 +319,11 @@
         \item Legal Frameworks
         \item Open Access
         \end{itemize}
-        \ \\
-        \pause Currently in the media: DEAL
+        \ \\ \ \\
+        \pause Some fame due to the recent "DEAL" negotiations.
       \end{center}
     \end{block}
 \end{frame}
-
 
 \setbeamertemplate{background}{}
 \setbeamertemplate{footline}{}
@@ -298,7 +332,7 @@
     \begin{block}{}
       \begin{center}
         Since 2016\\ \ \\
-        Ad-hoc working group "Research Software"
+        The cross-disciplinary ad-hoc working group "Research Software"
       \end{center}
     \end{block}
 \end{frame}
@@ -322,6 +356,7 @@
         Michael Franke & Max Planck Society \\
         Stephan Janosch & Max Planck Society \\
         Dr. Michael Erben-Russ & Fraunhofer Society \\
+        Dennis Zielke & Fraunhofer Society \\        
         Prof. Dr. Björn Brembs & German Rectors' Conference\\
         Dr. Konrad Förstner & German Rectors' Conference\\
       \end{tabular}}
@@ -329,18 +364,40 @@
     \end{block}
 \end{frame}
 
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Diverse backgrounds - scientist of different fields and
+      scientific service/infrastructure providers
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Our \textit{modus operandi}\\\ \\
+      Compile recommendations and carry them back into our research
+      organisations.
+    \end{center}
+  \end{block}
+\end{frame}
+
 \setbeamertemplate{background}{}
 \setbeamertemplate{footline}{}
 \begin{frame}
   \frametitle{}
   \begin{block}{}
     \begin{center}
-      Guiding idea\\\ \\
+      Guiding principle\\\ \\
     The concept of Good Scientific Practice (GSP) must be also applied
-    to research software.
+    to research software
     \end{center}
   \end{block}
 \end{frame}
+
 
 \setbeamertemplate{background}{}
 \setbeamertemplate{footline}{}
@@ -348,23 +405,39 @@
   \frametitle{}
   \begin{block}{}
     \begin{center}    
-      Confirmability, reproducibility, transparency and quality muss be
-      part of of the development and usage of research software.\\
-      \ \\
-      Re-use must be faciliated.
+      But what can Good Scientific Practice mean\\ for research software?
       \end{center}       
   \end{block}
 \end{frame}
 
+\setbeamertemplate{background}{}
+\setbeamertemplate{footline}{}
 \begin{frame}
   \frametitle{}
   \begin{block}{}
     \begin{center}
-      Software as three "digital tools" of scientific research
+        \begin{itemize}
+        \item Reproducibility
+        \item Confirmability          
+        \item Transparency
+        \item Qualility
+        \item Re-usability
+        \end{itemize}
+      \end{center}       
+  \end{block}
+\end{frame}
+
+\setbeamertemplate{background}{}
+\setbeamertemplate{footline}{}
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Our working model -- three types of software\\
       \begin{itemize}
-      \item Small tools individually written by the researches, Source Code!
-      \item Software applications
-      \item Services
+      \item[1.] Small tools written for single purpose
+      \item[2.] Software applications (as research output)
+      \item[3.] Infrastructure and online services
       \end{itemize}
     \end{center}
   \end{block}
@@ -374,27 +447,7 @@
   \frametitle{}
   \begin{block}{}
     \begin{center}
-      Software as research output
-      \begin{itemize}
-      \item Quality assurance and standards
-      \item Publication and Archiving
-      \item Citation
-      \item Reuse
-      \end{itemize}
-    \end{center}
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{}
-  \begin{block}{}
-    \begin{center}
-      Sustainable development of software
-      \begin{itemize}
-      \item From a research project to an application
-      \item Licenses
-      \item Funding
-      \end{itemize}
+      All three levels are relevant and\\have to be addressed
     \end{center}
   \end{block}
 \end{frame}
@@ -404,7 +457,9 @@
   \frametitle{}
   \begin{block}{}
     \begin{center}
-      Infrastructure and online services
+      Exact needs and possibilities might differ between scientific
+      communities.\\\ \\
+      Discourse must also happen\\inside of these  communities.
     \end{center}
   \end{block}
 \end{frame}
@@ -413,12 +468,43 @@
   \frametitle{}
   \begin{block}{}
     \begin{center}
-      Education
-      \begin{itemize}
-      \item Teaching computational skills to the scientific community
-      \item Development of new carreer paths (Research Software
-        Engineers, Software Librarian, Data Scientist)
-      \end{itemize}
+      E.g. what exactly means "reproducibility" (bit-identical
+      compilation?) and how long would this needed to be guaranteed?
+    \end{center}
+  \end{block}
+\end{frame}
+
+%% \setbeamertemplate{background}{}
+%% \setbeamertemplate{footline}{}
+%% \begin{frame}
+%%   \frametitle{}
+%%   \begin{block}{}
+%%     \begin{center}
+%%       Numerous stake-holder - scientists, funders, infrastructure
+%%       provider, universities and institution
+%%     \end{center}
+%%   \end{block}
+%% \end{frame}
+
+%% \begin{frame}
+%%   \frametitle{}
+%%   \begin{block}{}
+%%     \begin{center}
+%%       Software can grow from 1. to 2. to 3.
+%%     \end{center}
+%%   \end{block}
+%% \end{frame}
+
+\setbeamertemplate{background}{
+  \includegraphics[height=\paperheight]{images/flickr_ogimogi_2223450729.jpg}}
+\setbeamertemplate{footline}{\raisebox{2mm}[2mm][2mm]{\Tiny{https://www.flickr.com/photos/ogimogi/2223450729}{
+      https://www.flickr.com/photos/ogimogi/2223450729}
+    - CC-BY \href{https://www.flickr.com/photos/ogimogi}{Eran Sandler}}}
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Our aims / wishes
     \end{center}
   \end{block}
 \end{frame}
@@ -427,7 +513,7 @@
   \frametitle{}
   \begin{block}{}
     \begin{center}
-      Funding and Incentivisation
+      Raise the awareness for the\\relevance of research software
     \end{center}
   \end{block}
 \end{frame}
@@ -436,10 +522,149 @@
   \frametitle{}
   \begin{block}{}
     \begin{center}
-      We represent the German scientific community\\
+      Include standards for research software into the common Good
+      Scientific Practice recommendations
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Establish standards and mechanisms for quality control of
+      research software
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Create platforms to publish and archive\\software/source
+      code/workflows
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Enable citation of such items
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Make these citations part of the scientific reputation system
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Foster the education of computational skills inside of the
+      scientific community.
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Develop new carreer paths like\\ Research Software Engineers,
+      Software Librarians, Data Scientists
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Rise awareness about and teach legal aspects (i.e. licensing) of
+      software.\\\ \\Make open source the default.
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+       Facilitate the transition from single-purpose solutions to
+       application to services.
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      Provide long term funding to enable sustainable software
+      development.
+    \end{center}
+  \end{block}
+\end{frame}
+
+
+%% \begin{frame}
+%%   \frametitle{}
+%%   \begin{block}{}
+%%     \begin{center}
+%%       Software as research output
+%%       \begin{itemize}
+%%       \item Quality assurance and standards
+%%       \item Publication and Archiving
+%%       \item Citation
+%%       \item Reuse
+%%       \end{itemize}
+%%     \end{center}
+%%   \end{block}
+%% \end{frame}
+
+%% \begin{frame}
+%%   \frametitle{}
+%%   \begin{block}{}
+%%     \begin{center}
+%%       Sustainable development of software\\
+%%       \begin{itemize}
+%%       \item From a research project to an application
+%%       \item Licenses
+%%       \item Funding
+%%       \end{itemize}
+%%     \end{center}
+%%   \end{block}
+%% \end{frame}
+
+%% \begin{frame}
+%%   \frametitle{}
+%%   \begin{block}{}
+%%     \begin{center}
+%%       Infrastructure and online services
+%%     \end{center}
+%%   \end{block}
+%% \end{frame}
+
+\setbeamertemplate{background}{}
+\setbeamertemplate{footline}{}
+\begin{frame}
+  \frametitle{}
+  \begin{block}{}
+    \begin{center}
+      We represent the German scientific community / research organisation\\
       \ \\
       \pause
-      Ideally all these issues should be adressed on an international level
+      Ideally all these issues are adressed on an international level
     \end{center}
   \end{block}
 \end{frame}
@@ -448,16 +673,25 @@
   \frametitle{}
   \begin{block}{}
     \begin{center}
-      Open for input and offer to collaborate
+      Let's do this together!
     \end{center}
   \end{block}
 \end{frame}
 
+\setbeamertemplate{background}{
+  \includegraphics[height=\paperheight]{images/flickr_nateone_3768979925.jpg}}
+\setbeamertemplate{footline}{\raisebox{2mm}[2mm][2mm]{
+    \Tiny {\url{http://www.flickr.com/photos/nateone/3768979925/} 
+      -- CC-BY by flick user \href{http://www.flickr.com/photos/nateone/}{nateone}}}}
 \begin{frame}
   \frametitle{}
   \begin{block}{}
     \begin{center}
-      Thank you
+      \includegraphics[height=2cm]{images/logo_allianz.png}\\
+      \vspace{1.5cm}      
+      \textbf{\href{http://www.allianzinitiative.de/}{www.allianzinitiative.de}}\\
+      \vspace{1.5cm}
+      \href{http://twitter.com/konradfoerstner}{@konradfoerstner}
       \end{center}    
   \end{block}
 \end{frame}
