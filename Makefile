@@ -1,8 +1,8 @@
-$pdf:
-	xelatex 2017-05-10-Hannover_S3_talk_slide.tex
+pdf:
+	xelatex 2017-05-10-Hannover_S3_talk_slides.tex
 
 pdf_follow_changes:
-	 latexmk -xelatex -pvc 2017-05-10-Hannover_S3_talk_slide.tex
+	 latexmk -xelatex -pvc 2017-05-10-Hannover_S3_talk_slides.tex
 
 clean:
 	rm -f *aux *log *nav *snm *out *toc *pdf *.fdb_latexmk *.fls *.bbl *.blg *~
@@ -10,6 +10,10 @@ clean:
 
 download_images:
 	mkdir -p images
+
+	# CC-BY logo
+	wget -c -O images/creative_commons_attribute.png \
+	   http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png
 
 	# https://commons.wikimedia.org/wiki/File:Bertini_fresco_of_Galileo_Galilei_and_Doge_of_Venice.jpg
 	wget -c -P images \
@@ -22,7 +26,7 @@ download_images:
 	# https://unsplash.com/photos/IClZBVw5W5A
 	wget -O images/Tools_by_Todd_Quackenbush.jpg \
 	   https://images.unsplash.com/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg
-	mogrify -geometry 10% images/Tools_by_Todd_Quackenbush.jpg
+	mogrify -geometry 20% images/Tools_by_Todd_Quackenbush.jpg
 
 	# https://www.flickr.com/photos/80030261@N06/9955408263
 	wget -O images/Flickr_National_Eye_Institute_9955408263.jpg \
@@ -38,5 +42,13 @@ download_images:
 	mogrify -geometry 10% images/Sprout_by_Markus-Spiske.jpg
 
 	# This one is NOT CC-BY conform! => Not checked in into the repo
-	wget -P imges \
+	wget -P images \
 	  http://www.dfg.de/zentralablage/bilder/dfg_im_profil/allianz/logo_allianz.png
+
+	# https://www.flickr.com/photos/ogimogi/2223450729
+	wget -O images/flickr_ogimogi_2223450729.jpg \
+	  https://farm3.staticflickr.com/2336/2223450729_8761f4a0dd_b_d.jpg
+
+	# https://www.flickr.com/photos/nateone/3768979925/
+	wget -O images/flickr_nateone_3768979925.jpg \
+	  https://farm3.staticflickr.com/2448/3768979925_3abc142dbd_b_d.jpg
