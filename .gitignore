@@ -1,0 +1,12 @@
+*logo_allianz.png
+*aux
+*log
+*nav
+*snm
+*out
+*toc
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+*~
